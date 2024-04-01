@@ -1,0 +1,542 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta http-equiv="Last-Modified" content="Sun, 24 Dec 2017 15:53:00 GMT">
+    <meta name="generator" content="jsonresume-theme-relaxed v0.1.9">
+    <meta name="author" content="Wei Li">
+    <meta property="og:site_name" content="Wei Li">
+    <meta name="twitter:card" content="summary">
+    <meta name="version" content="v1.0.0">
+    <link rel="alternate" type="application/json" title="resume.json"
+        href="https://raw.githubusercontent.com/jsonresume/resume-schema/master/resume.json">
+    <link rel="stylesheet" type="text/css" href="https://use.typekit.net/wav6afv.css">
+    <style>
+        :root {
+            font-size: 10pt
+        }
+
+        :root {
+            font-family: "Lato", sans-serif;
+            text-rendering: geometricPrecision
+        }
+
+        @media not print {
+            @page {
+                margin: 2ex
+            }
+
+            section {
+                break-inside: avoid-page
+            }
+        }
+
+        @media print {
+            @page {
+                margin: 2.5cm
+            }
+        }
+
+        body {
+            padding: 0
+        }
+
+        @media only screen and (min-width:297mm) {
+            body {
+                height: 210mm;
+                width: 297mm;
+                margin: auto
+            }
+        }
+
+        main {
+            margin: 0 1ex
+        }
+
+        header {
+            height: 8em;
+            margin: 1ex 1.5ex -1ex
+        }
+
+        article:not(.flex)>h3 {
+            margin-block-end: .75em
+        }
+
+        h1 {
+            font-size: 2em;
+            font-weight: 600;
+            margin: .5em 0
+        }
+
+        h2 {
+            font-size: 1.5em;
+            font-weight: 400;
+            margin: .5em 0
+        }
+
+        h3 {
+            font-size: 1.25em;
+            font-weight: 600
+        }
+
+        h3::before {
+            content: " ";
+            height: 0;
+            width: calc(100% + 2ex);
+            display: block;
+            position: relative;
+            padding-block-start: 1em;
+            border-block-start: .2ex solid #789;
+            left: -1ex;
+            right: -1ex
+        }
+
+        strong {
+            font-size: 1.1em;
+            font-weight: 600
+        }
+
+        b {
+            font-weight: 600
+        }
+
+        small {
+            font-size: .9em
+        }
+
+        em {
+            font-style: normal;
+            text-decoration: underline #000 solid .15ex;
+            text-underline-position: under
+        }
+
+        address {
+            font-style: inherit
+        }
+
+        a,
+        a:hover {
+            color: inherit;
+            outline: none;
+            text-decoration: underline #0ff solid .15ex;
+            text-underline-position: under
+        }
+
+        mark {
+            color: #fff;
+            background-color: #008b8b;
+            border-radius: .2em;
+            display: inline-block;
+            padding: .15em .25em;
+            margin: 0 0 .2em .2em;
+            print-color-adjust: exact
+        }
+
+        ul {
+            padding-inline-start: 2em;
+            list-style-type: disclosure-closed
+        }
+
+        progress {
+            height: .5em;
+            border: 0;
+            width: 95%;
+            background-color: #808080;
+            display: inline-block;
+            border-radius: .25em;
+            margin: .25em 0;
+            print-color-adjust: exact
+        }
+
+        progress::-moz-progress-bar {
+            border-radius: .25em;
+            background-color: #008000;
+            print-color-adjust: exact
+        }
+
+        progress::-webkit-progress-value {
+            border-radius: .25em;
+            background-color: #008000;
+            print-color-adjust: exact
+        }
+
+        progress::-webkit-progress-bar {
+            border-radius: .25em
+        }
+
+        time+ :is(time, span)::before {
+            content: "–";
+            padding: 0 .25em
+        }
+
+        .flex {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+            gap: 0 .75em
+        }
+
+        .flex>h3 {
+            flex-basis: 100%
+        }
+
+        .flex>section {
+            flex: 1
+        }
+
+        .details> :first-child {
+            margin-block-end: 1em
+        }
+
+        .details:not(:first-of-type) {
+            padding-block-start: 1em
+        }
+
+        .details:not(:last-of-type) {
+            padding-block-end: 1em;
+            border-block-end: .15ex dashed #2f4f4f
+        }
+
+        .wrap {
+            line-height: 1.5em;
+            white-space: pre-wrap
+        }
+
+        .icon {
+            height: .9em;
+            width: .9em;
+            vertical-align: middle;
+            margin-inline-end: .2em
+        }
+
+        h3>.icon {
+            margin-block-end: .4ex
+        }
+
+        .icon[src$="map-pin.svg"] {
+            vertical-align: initial;
+            margin-block-start: -.4ex
+        }
+
+        .icon[src$="trophy.svg"],
+        .icon[src$="document-text.svg"] {
+            margin-block-start: -.2ex
+        }
+
+        .icon[src$="heart.svg"],
+        .icon[src$="academic-cap.svg"] {
+            margin-block-start: -.1ex
+        }
+
+        .icon[src$="github"] {
+            margin-block-end: .4ex
+        }
+
+        .icon[src$="element"] {
+            margin-block-end: .3ex
+        }
+
+        .icon[src$="signal"],
+        .icon[src$="globe-alt.svg"] {
+            margin-block-end: .2ex
+        }
+
+        .icon[src$="linkedin"],
+        .icon[src$="phone.svg"],
+        .icon[src$="envelope.svg"] {
+            margin-block-end: .1ex
+        }
+
+        .float {
+            float: inline-end;
+            margin-inline-end: .75em
+        }
+
+        .sep {
+            margin-block-start: .25em
+        }
+
+        .sep>b::after {
+            content: "·";
+            padding: 0 .5em
+        }
+
+        .education>div+div {
+            margin-block-start: 1.5ex
+        }
+
+        .education .courses>ul {
+            display: flex;
+            flex-wrap: wrap;
+            margin-block-end: 0
+        }
+
+        .education .courses>ul>li {
+            flex-basis: 50%
+        }
+
+        .project>div+div {
+            margin-block-start: 1.5ex
+        }
+
+        .reference {
+            background: #d3d3d3;
+            border-radius: 1.5ex;
+            padding: .5em 1em;
+            print-color-adjust: exact
+        }
+
+        .reference>blockquote {
+            font-style: italic;
+            quotes: "“" "”";
+            margin: 0
+        }
+
+        .reference>blockquote::before {
+            content: open-quote;
+            font-size: 2em;
+            line-height: .1em;
+            vertical-align: -.4em;
+            color: #789;
+            padding-inline-end: .25em
+        }
+
+        .reference>blockquote::after {
+            content: close-quote;
+            font-size: 2em;
+            line-height: .1em;
+            vertical-align: -.4em;
+            color: #789;
+            padding-inline-start: .2em
+        }
+
+        .reference>b::before {
+            content: "–";
+            padding: 0 .5em 0 0
+        }
+
+        :is(.skill, .language, .interest)>div {
+            margin-block-start: .75ex
+        }
+
+        #summary {
+            padding-block-end: 1em;
+            border-block-end: .1ex dotted #a9a9a9
+        }
+
+        #image {
+            display: contents
+        }
+
+        #image>img {
+            float: inline-end;
+            max-height: 90%;
+            border: .3ex solid #006400;
+            border-radius: 15%
+        }
+
+        :is(#contact, #profiles)>div {
+            margin-block-end: .25ex
+        }
+
+        @supports not (float:inline-end) {
+
+            html[dir="ltr"] #image>img,
+            html[dir="ltr"] .float {
+                float: right
+            }
+
+            html[dir="rtl"] #image>img,
+            html[dir="rtl"] .float {
+                float: left
+            }
+        }
+    </style>
+    <title>Wei Li</title>
+</head>
+
+<body>
+    <header class="flex">
+        <section>
+            <h1 id="name">Wei Li</h1>
+        </section>
+    </header>
+    <main>
+        <article id="about">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/identification.svg">Personal
+                Info</h3>
+            <address class="flex">
+                <section id="contact">
+                    <div class="url"><img class="icon" alt="E-mail"
+                            src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/envelope.svg"><a
+                            rel="me" href="mailto:wxl885@student.bham.ac.uk">wxl885@student.bham.ac.uk</a></div>
+                    <div><img class="icon" alt="Address"
+                            src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/map-pin.svg"><span>University
+                            of Birmingham, Edgbaston, Birmingham, B15 2TT, West Midlands, United Kingdom</span></div>
+                </section>
+                <section id="profiles">
+                    <div class="brand"><img class="icon" alt="LinkedIn" src="https://cdn.simpleicons.org/linkedin"><a
+                            rel="me" href="www.linkedin.com/in/wei-li-69a187174">Wei Li</a></div>
+                </section>
+            </address>
+        </article>
+        <article id="education">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/academic-cap.svg">Education
+            </h3>
+            <section class="education details">
+                <div><strong><span>PhD Candidate - Natural Language Processing</span></strong><span class="float"><time
+                            datetime="2020-02-01">February 2020</time><span>Present</span></span></div>
+                <div><strong>University of Birmingham</strong><b class="float">PhD</b></div>
+            </section>
+            <section class="education details">
+                <div><strong><span>M.Sc. (Taught) Advanced Computer Science</span></strong><span class="float"><time
+                            datetime="2019-09-01">September 2019</time><span>Present</span></span></div>
+                <div><strong>University of Birmingham</strong><b class="float">MSc</b></div>
+                <div class="grade"><b>Grade: </b>Distinction</div>
+            </section>
+            <section class="education details">
+                <div><strong><span>Computer Science</span></strong><span class="float"><time
+                            datetime="2017-09-01">September 2017</time><span>Present</span></span></div>
+                <div><strong>Changsha University of Science and Technology</strong><b class="float">BEng</b></div>
+                <div class="grade"><b>Grade: </b>Overall GPA 83.99/100 (rank 13/154)</div>
+            </section>
+        </article>
+        <article id="publications" class="flex">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/document-text.svg">Publications
+            </h3>
+            <section class="publication">
+                <div><strong><span>Sparse KD: Knowledge Distillation for Sparse Models in Constrained Fine-tuning
+                            Scenarios</span></strong></div>
+                <div class="sep"><b>arXiv</b><time datetime="2024">Jan 2024</time></div>
+                <p class="wrap">This paper proposed Sparse KD, the first distillation framework specifically designed
+                    for sparse models in constrained finetuning scenarios.</p>
+            </section>
+            <section class="publication">
+                <div><strong><span>UoB_UK at SemEval 2021 Task 2: Zero-Shot and Few-Shot Learning for Multi-lingual and
+                            Cross-lingual Word Sense Disambiguation</span></strong></div>
+                <div class="sep"><b>Association for Computational Linguistics (SemEval-2021)</b><time
+                        datetime="2022">Jan 2022</time></div>
+                <p class="wrap">This paper describes our submission to SemEval 2021 Task 2. The experiments on both the
+                    multi-lingual and cross-lingual data show that XLM-RoBERTa Large, unlike the Base version, seems to
+                    be able to more effectively transfer learning in a few-shot setting and that the k-nearest
+                    neighbours’ classifier is indeed a more powerful classifier than a multi-layered perceptron when
+                    used in few-shot learning.</p>
+            </section>
+            <section class="publication">
+                <div><strong><span>Location Data Privacy Protection based on Differential Privacy
+                            Mechanism</span></strong></div>
+                <div class="sep"><b>Application Research of Computers, China</b><time datetime="2018">Jan 2018</time>
+                </div>
+                <p class="wrap">This paper proposes using contextual augmentation by fine-tuning the BERT model and
+                    constructing auxiliary sentences for the sentence-pair classification task. Adequate experiments are
+                    conducted on Sentihood dataset for TABSA(target aspect-based sentiment analysis) task, and the
+                    results show the effectiveness of the proposed method.</p>
+            </section>
+        </article>
+        <article id="work">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/building-office-2.svg">Work
+                Experience</h3>
+            <section class="work details">
+                <div><strong><span>Shenzhen Fortune Technology Co., Ltd.</span></strong><span class="float"><time
+                            datetime="2013-12-01">December 2013</time><time datetime="2014-12-01">December
+                            2014</time></span></div>
+                <div><strong>Software Engineer Internship</strong></div>
+                <p class="wrap">Mainly analyzed and fixed bugs for database, inserting a large quantity of data and
+                    software tests. Wrote an analysis tool by Java to speed up the process of inserting big data,
+                    assembled as an interface to be used by other staff.</p>
+            </section>
+            <section class="work details">
+                <div><strong></strong><span class="float"><time datetime="2020-05-01">May 2020</time><time
+                            datetime="2023-09-01">September 2023</time></span></div>
+                <div><strong>Teaching Assistant Experience in University of Birmingham</strong></div>
+                <ul class="highlights">
+                    <li>Module 06-30203 (2020/2021.2022)-Programming in C/C++</li>
+                    <li>Module 06-34238 (2021/2022/2023)-Artificial Intelligence 1</li>
+                </ul>
+            </section>
+        </article>
+        <article id="projects">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/archive-box.svg">Projects
+            </h3>
+            <section class="project details">
+                <div><strong><span>Thesis- Advanced MSc: Targeted aspect-based sentiment analysis: Utilizing contextual
+                            augmentation with fine-tuning BERT</span></strong><span class="float"><time
+                            datetime="2019-02-24">February 24, 2019</time><time datetime="2019-08-24">August 24,
+                            2019</time></span></div>
+                <div class="wrap">This project proposes using contextual augmentation by fine-tuning the BERT model and
+                    constructing auxiliary sentences for the sentence-pair classification task. Adequate experiments are
+                    conducted on Sentihood dataset for TABSA(target aspect-based sentiment analysis) task, and the
+                    results show the effectiveness of the proposed method.</div>
+                <ul class="highlights">
+                    <li>constructing auxiliary sentences for the sentence-pair classification task</li>
+                </ul>
+                <div class="keywords"><mark>Bert</mark><mark>sentiment analysis</mark><mark>Python</mark></div>
+            </section>
+            <section class="project details">
+                <div><strong><span>Mini-Project: Understanding Emotions in Textual Conversations</span></strong><span
+                        class="float"><time datetime="2018-12-24">December 24, 2018</time><time
+                            datetime="2019-04-24">April 24, 2019</time></span></div>
+                <div class="wrap">This project proposes using contextual augmentation by fine-tuning the BERT model and
+                    constructing auxiliary sentences for the sentence-pair classification task. Adequate experiments are
+                    conducted on Sentihood dataset for TABSA(target aspect-based sentiment analysis) task, and the
+                    results show the effectiveness of the proposed method.</div>
+                <ul class="highlights">
+                    <li>Emotion Classification</li>
+                    <li>Hybrid Model Approach</li>
+                </ul>
+                <div class="keywords"><mark>Hybrid Model Approach</mark><mark>sentiment
+                        analysis</mark><mark>Python</mark><mark>Xgboost</mark><mark>SVM</mark></div>
+            </section>
+        </article>
+        <article id="skills" class="flex">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/wrench-screwdriver.svg">Skills
+            </h3>
+            <section class="skill"><strong>Coding Level</strong>
+                <div title="Master"><progress max="100" value="100"></progress></div>
+                <div class="keywords"><mark>Python</mark><mark>C</mark><mark>Java</mark></div>
+            </section>
+            <section class="skill"><strong>Libraries and tools</strong>
+                <div title="Master"><progress max="100" value="100"></progress></div>
+                <div class="keywords"><mark>Spacy</mark><mark>Sci-Kit</mark><mark>PyTorch</mark><mark>NLTK</mark></div>
+            </section>
+        </article>
+        <article id="awards" class="flex">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/trophy.svg">Awards
+            </h3>
+            <section class="award">
+                <div><strong>Third Prize in the National College Student Computer Design Contest, China</strong></div>
+                <div class="sep"><b>Committee of China College Students' Computer Design Competition</b><time
+                        datetime="2014-01-01">Jan 2014</time></div>
+            </section>
+            <section class="award">
+                <div><strong>Three times university First-class Scholarship, China</strong></div>
+                <div class="sep"><b>Changsha University of Science and Technology</b><time datetime="2017-01-01">Jan
+                        2017</time></div>
+            </section>
+            <section class="award">
+                <div><strong>Excellent Prize in China College Students' 'Internet+'Innovation and Entrepreneurship
+                        Competition</strong></div>
+                <div class="sep"><b>Hunan Education Department</b><time datetime="2015-01-01">Jan 2015</time></div>
+            </section>
+        </article>
+        <article id="interests" class="flex">
+            <h3><img class="icon" alt=""
+                    src="https://cdn.statically.io/gh/tailwindlabs/heroicons/master/src/24/outline/heart.svg">Interests
+            </h3>
+            <section class="interest"><strong>Wildlife</strong>
+                <div class="keywords"><mark>Ferrets</mark><mark>Unicorns</mark></div>
+            </section>
+        </article>
+    </main>
+</body>
+
+</html>
