@@ -73,6 +73,35 @@ interface ResumeSchema {
     }[]
     [k: string]: unknown
   }
+  education?: {
+    /**
+     * e.g. Massachusetts Institute of Technology
+     */
+    institution?: string
+    /**
+     * e.g. http://facebook.example.com
+     */
+    url?: string
+    /**
+     * e.g. Arts
+     */
+    area?: string
+    /**
+     * e.g. Bachelor
+     */
+    studyType?: string
+    startDate?: Iso8601
+    endDate?: Iso8601
+    /**
+     * grade point average, e.g. 3.67/4.0
+     */
+    score?: string
+    /**
+     * List notable courses/subjects
+     */
+    courses?: string[]
+    [k: string]: unknown
+  }[]
   work?: {
     /**
      * e.g. Facebook
@@ -129,35 +158,6 @@ interface ResumeSchema {
      * Specify accomplishments and achievements
      */
     highlights?: string[]
-    [k: string]: unknown
-  }[]
-  education?: {
-    /**
-     * e.g. Massachusetts Institute of Technology
-     */
-    institution?: string
-    /**
-     * e.g. http://facebook.example.com
-     */
-    url?: string
-    /**
-     * e.g. Arts
-     */
-    area?: string
-    /**
-     * e.g. Bachelor
-     */
-    studyType?: string
-    startDate?: Iso8601
-    endDate?: Iso8601
-    /**
-     * grade point average, e.g. 3.67/4.0
-     */
-    score?: string
-    /**
-     * List notable courses/subjects
-     */
-    courses?: string[]
     [k: string]: unknown
   }[]
   /**
